@@ -79,39 +79,39 @@ public class Player : MonoBehaviour
         InputManager.Instance.OnEndSwipe -= SwipeEnd;
     }
 
-    void Update()
-    {
-        // _mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
-        // _mousePos.z =  -0.5f;
-
-        if (CanPickPoints)
-        {
-            // if (PointCheck() && Input.GetMouseButtonDown(0))
-            // {
-            //     if(_intersectPoint != null)
-            //         _intersectPoint.DeactivatePoint();
-            //     _intersectPoint = hit.collider.GetComponent<IntersectPoint>();
-            //     _intersectPoint.ActivatePoint();
-            // }
-
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                _intersectPoint.CanTurn = true;
-                CanPickPoints = false;
-            }
-
-            if (Input.GetKeyDown(KeyCode.A))
-            {
-                PointGrid.Instance.CheckAndDestroyIfHasMatch();
-                PointGrid.Instance.HasMatch = false;
-            }
-
-            if (Input.GetKeyDown(KeyCode.R))
-            {
-                SceneManager.LoadScene(SceneManager.sceneCount - 1);
-            }
-        }
-    }
+    // void Update()
+    // {
+    //     // _mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
+    //     // _mousePos.z =  -0.5f;
+    //
+    //     if (CanPickPoints)
+    //     {
+    //         // if (PointCheck() && Input.GetMouseButtonDown(0))
+    //         // {
+    //         //     if(_intersectPoint != null)
+    //         //         _intersectPoint.DeactivatePoint();
+    //         //     _intersectPoint = hit.collider.GetComponent<IntersectPoint>();
+    //         //     _intersectPoint.ActivatePoint();
+    //         // }
+    //
+    //         // if (Input.GetKeyDown(KeyCode.Space))
+    //         // {
+    //         //     _intersectPoint.CanTurn = true;
+    //         //     CanPickPoints = false;
+    //         // }
+    //         //
+    //         // if (Input.GetKeyDown(KeyCode.A))
+    //         // {
+    //         //     PointGrid.Instance.CheckAndDestroyIfHasMatch();
+    //         //     PointGrid.Instance.HasMatch = false;
+    //         // }
+    //         //
+    //         // if (Input.GetKeyDown(KeyCode.R))
+    //         // {
+    //         //     SceneManager.LoadScene(SceneManager.sceneCount - 1);
+    //         // }
+    //     }
+    // }
 
     private void SwipeStart(Vector2 pos, float time)
     {
