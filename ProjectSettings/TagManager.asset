@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Hexagon
+  - Falling Hexagon
+  - Point
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Dot
+  - Hexagon
+  - Chosen Hexagon
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Hexagon
+    uniqueID: 620781013
+    locked: 0
+  - name: Outline
+    uniqueID: 2570131241
+    locked: 0
+  - name: Chosen Hexagon
+    uniqueID: 1902871201
+    locked: 0
+  - name: Dot
+    uniqueID: 870514979
+    locked: 0
+  - name: Particle
+    uniqueID: 1248710373
+    locked: 0
